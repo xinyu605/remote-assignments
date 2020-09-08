@@ -43,8 +43,13 @@
 
     nav .menu {
         float: right;
+        display: flex;
     }
 
+    nav .menu .material-icons {
+        display: none;
+    }
+    
     nav .menu li {
         list-style-type: none;
         float: left;
@@ -91,7 +96,7 @@
     .container .box {
         height: 300px;
         background-color: bisque;
-        margin: 10px;
+        margin-bottom: 20px;
         padding: 10px;
         box-sizing: border-box;
         /* 改變區塊的寬高計算方式，將寬高設定包含 content+padding+border */

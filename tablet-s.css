@@ -1,4 +1,4 @@
-@media screen and (min-width: 800px) and (max-width: 1200px) {
+@media screen and (min-width: 500px) and (max-width: 800px) {
     /* 版型欄數需求 */
 
     /* 滿版 */
@@ -41,19 +41,12 @@
     }
 
     nav .menu {
+        height: 50px;
         float: right;
-        display: flex;
     }
-
-    nav .menu .material-icons {
-        display: none;
-    }
-
-    nav .menu li {
-        list-style-type: none;
-        float: left;
-        width: 80px;
-        text-align: center;
+    
+    nav .menu ul {
+        visibility: hidden;
     }
 
     nav .menu a {

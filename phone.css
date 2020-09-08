@@ -1,4 +1,4 @@
-@media screen and (min-width: 800px) and (max-width: 1200px) {
+@media screen and (max-width: 500px) {
     /* 版型欄數需求 */
 
     /* 滿版 */
@@ -16,8 +16,8 @@
 
     /* 兩欄 */
     .col-2 {
-        float: left;
-        width: 46%;
+        width: 96%;
+        margin: auto;
     }
 
     nav {
@@ -41,19 +41,12 @@
     }
 
     nav .menu {
+        height: 50px;
         float: right;
-        display: flex;
     }
-
-    nav .menu .material-icons {
-        display: none;
-    }
-
-    nav .menu li {
-        list-style-type: none;
-        float: left;
-        width: 80px;
-        text-align: center;
+    
+    nav .menu ul {
+        visibility: hidden;
     }
 
     nav .menu a {
@@ -72,7 +65,7 @@
     }
 
     header h1 {
-        font-size: 50px;
+        font-size: 40px;
         text-align: center;
     }
 
@@ -81,7 +74,7 @@
     }
 
     h2 {
-        font-size: 36px;
+        font-size: 30px;
         line-height: 100px;
         margin: auto;
     }
