@@ -7,60 +7,55 @@
     <!--設定使用裝置的預設顯示方式-->
     <meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = no">
     <title>Week 1: Assignment 2</title>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="desktop.css">
-    <!--more than 1200px-->
-    <link rel="stylesheet" href="tablet.css">
-    <!--800~1200px-->
-    <link rel="stylesheet" href="tablet-s.css"> <!--500~800px-->
-    <link rel="stylesheet" href="phone.css"> <!--less than 500px-->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <nav class="full-width">
+    <header class="full-width">
         <div class="logo">
             <a href="#">Website Title</a>
         </div>
-        <div class="menu">
-           <span class="material-icons"><a href="#">dehaze</a></span>
-            
+        <nav>
+            <span class="material-icons"><a href="#">dehaze</a></span>
             <ul>
                 <li><a href="#">item 1</a></li>
                 <li><a href="#">item 2</a></li>
                 <li><a href="#">item 3</a></li>
                 <li><a href="#">item 4</a></li>
             </ul>
-        </div>
-    </nav>
-    <header>
-        <h1>Welcome Message</h1>
+        </nav>
     </header>
-    <div class="full-width">
 
-        <div class="fixed-width clearfix" id="section-title">
+
+    <main>
+        <section class="full-width welcome">
+            <h1>Welcome Message</h1>
+        </section>
+
+        <section class="full-width" id="about">
             <h2>Section Title</h2>
-        </div>
-
-        <div class="container">
-            <div class="col-2 box">
-                <p>Content Box 1</p>
+            <div class="container">
+                <div class="col-2 box">
+                    <p>Content Box 1</p>
+                </div>
+                <div class="col-2 box">
+                    <p>Content Box 2</p>
+                </div>
+                <div class="col-2 box">
+                    <p>Content Box 3</p>
+                </div>
+                <div class="col-2 box">
+                    <p>Content Box 4</p>
+                </div>
             </div>
-            <div class="col-2 box">
-                <p>Content Box 2</p>
+            <div class="content-btn">
+                <a href="#" class="btn">Call to Action</a>
             </div>
-            <div class="col-2 box">
-                <p>Content Box 3</p>
-            </div>
-            <div class="col-2 box">
-                <p>Content Box 4</p>
-            </div>
-        </div>
-        <div class="full-width content-btn">
-            <a href="#" class="btn">Call to Action</a>
-        </div>
-    </div>
+        </section>
+    </main>
 </body>
 
 </html>

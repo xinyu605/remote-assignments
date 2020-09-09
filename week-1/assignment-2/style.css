@@ -1,0 +1,489 @@
+/*---------------------------------------------
+
+request 1: Layout when screen width > 1200px 
+
+-----------------------------------------------*/
+
+@media screen and (min-width: 1200px) {
+
+    .full-width {
+        width: 100%;
+        margin: auto;
+    }
+
+    .fixed-width {
+        width: 1200px;
+        margin: auto;
+        /* 上下為 0，水平居中 */
+    }
+
+    .col-2 {
+        float: left;
+        width: 580px;
+        margin: 0 10px;
+    }
+
+    /*-- header start --*/
+
+    header {
+        height: 50px;
+        background-color: antiquewhite;
+    }
+
+    header .logo {
+        width: 100px;
+        height: 50px;
+        background-color: burlywood;
+        float: left;
+    }
+
+    header .logo a {
+        display: block;
+        text-decoration: none;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+    }
+
+    nav {
+        height: 50px;
+        float: right;
+
+    }
+
+    nav .material-icons {
+        display: none;
+    }
+
+    nav li {
+        list-style-type: none;
+        float: left;
+        width: 80px;
+        height: 50px;
+        text-align: center;
+    }
+
+    nav a {
+        text-decoration: none;
+        line-height: 50px;
+        color: #222;
+    }
+
+    nav a:hover {
+        color: goldenrod;
+    }
+
+    /*-- header end --*/
+    /*-- main start --*/
+
+    main .welcome {
+        padding: 120px 0;
+        background-color: beige;
+    }
+
+    main .welcome h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    #about {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 36px;
+        line-height: 100px;
+        margin: auto;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .container .box {
+        height: 300px;
+        background-color: bisque;
+        margin-bottom: 20px;
+        padding: 10px;
+        box-sizing: border-box;
+        /* 改變區塊的寬高計算方式，將寬高設定包含 content+padding+border */
+    }
+
+    .content-btn {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        background-color: #222;
+        color: #fff;
+    }
+}
+
+/*-- main end --*/
+
+/*-------------------------------------------------------
+
+request 2: Layout when screen width > 800px and < 1200px 
+
+---------------------------------------------------------*/
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+
+    .full-width {
+        width: 100%;
+        margin: auto;
+    }
+
+    .fixed-width {
+        width: 100%;
+        margin: auto;
+    }
+
+    .col-2 {
+        float: left;
+        width: 46%;
+    }
+
+    /*-- header start --*/
+
+    header {
+        height: 50px;
+        background-color: antiquewhite;
+    }
+
+    header .logo {
+        width: 100px;
+        height: 50px;
+        background-color: burlywood;
+        float: left;
+    }
+
+    header .logo a {
+        display: block;
+        text-decoration: none;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+    }
+
+    nav {
+        float: right;
+        display: flex;
+    }
+
+    nav .material-icons {
+        display: none;
+    }
+
+    nav li {
+        list-style-type: none;
+        float: left;
+        width: 80px;
+        text-align: center;
+    }
+
+    nav a {
+        text-decoration: none;
+        line-height: 50px;
+        color: #222;
+    }
+
+    nav a:hover {
+        color: goldenrod;
+    }
+
+    /*-- header end --*/
+    /*-- main start --*/
+
+    main .welcome {
+        padding: 120px 0;
+        background-color: beige;
+    }
+
+    main .welcome h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    #about {
+        text-align: center;
+    }
+
+    #about h2 {
+        font-size: 36px;
+        line-height: 100px;
+        margin: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .container .box {
+        height: 300px;
+        background-color: bisque;
+        padding: 10px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        /* 改變區塊的寬高計算方式，將寬高設定包含 content+padding+border */
+    }
+
+    .content-btn {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        background-color: #222;
+        color: #fff;
+    }
+}
+
+/*-- main end --*/
+
+/*-------------------------------------------------------
+
+request 3: Layout when screen width > 500px and < 800px  
+
+---------------------------------------------------------*/
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+
+    .full-width {
+        width: 100%;
+        margin: auto;
+    }
+
+    .fixed-width {
+        width: 100%;
+        margin: auto;
+    }
+
+    .col-2 {
+        float: left;
+        width: 46%;
+    }
+
+    /*-- header start --*/
+
+    header {
+        height: 50px;
+        background-color: antiquewhite;
+    }
+
+    header .logo {
+        width: 100px;
+        height: 50px;
+        background-color: burlywood;
+        float: left;
+    }
+
+    header .logo a {
+        display: block;
+        text-decoration: none;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+    }
+
+    nav {
+        height: 50px;
+        float: right;
+    }
+
+    nav ul {
+        visibility: hidden;
+    }
+
+    nav a {
+        text-decoration: none;
+        line-height: 50px;
+        color: #222;
+    }
+
+    nav a:hover {
+        color: goldenrod;
+    }
+
+    /*-- header end --*/
+    /*-- main start --*/
+
+    main .welcome {
+        padding: 120px 0;
+        background-color: beige;
+    }
+
+    main .welcome h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    #about {
+        text-align: center;
+    }
+
+    #about h2 {
+        font-size: 36px;
+        line-height: 100px;
+        margin: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .container .box {
+        height: 300px;
+        background-color: bisque;
+        padding: 10px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    .content-btn {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        background-color: #222;
+        color: #fff;
+    }
+}
+
+/*-- main end --*/
+
+/*-------------------------------------------------------
+
+request 4: Layout when screen width < 500px  
+
+---------------------------------------------------------*/
+
+@media screen and (max-width: 500px) {
+
+    .full-width {
+        width: 100%;
+        margin: auto;
+    }
+
+    .fixed-width {
+        width: 100%;
+        margin: auto;
+    }
+
+    .col-2 {
+        width: 96%;
+        margin: auto;
+    }
+
+    /*-- header start --*/
+
+    header {
+        height: 50px;
+        background-color: antiquewhite;
+    }
+
+    header .logo {
+        width: 100px;
+        height: 50px;
+        background-color: burlywood;
+        float: left;
+    }
+
+    header .logo a {
+        display: block;
+        text-decoration: none;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+    }
+
+    nav {
+        height: 50px;
+        float: right;
+    }
+
+    nav ul {
+        visibility: hidden;
+    }
+
+    nav a {
+        text-decoration: none;
+        line-height: 50px;
+        color: #222;
+    }
+
+    nav a:hover {
+        color: goldenrod;
+    }
+
+    /*-- header end --*/
+    /*-- main start --*/
+
+    main .welcome {
+        padding: 120px 0;
+        background-color: beige;
+    }
+
+    main .welcome h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #about {
+        text-align: center;
+    }
+
+    #about h2 {
+        font-size: 30px;
+        line-height: 100px;
+        margin: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .container .box {
+        height: 300px;
+        background-color: bisque;
+        padding: 10px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    .content-btn {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        background-color: #222;
+        color: #fff;
+    }
+}
+
+/*-- main end --*/
