@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!--設定使用裝置的預設顯示方式-->
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = no">
+    <title>Week 1: Assignment 2</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="full-width">
+        <div class="logo">
+            <a href="#">Website Title</a>
+        </div>
+        <nav class="clearfix">
+            <span class="material-icons" id="menuButton"><a href="#">dehaze</a></span>
+
+            <ul id="pcMenu">
+                <li><a href="#">item 1</a></li>
+                <li><a href="#">item 2</a></li>
+                <li><a href="#">item 3</a></li>
+                <li><a href="#">item 4</a></li>
+            </ul>
+            
+            <!-- < 800px 出現，> 800px 隱藏的部分 begin-->
+            <div id="mobileMenu" class="clearfix">
+                <span class="material-icons" id="closeButton"><a href="#">
+                        close</a>
+                </span>
+                <ul>
+                    <li><a href="#">item 1</a></li>
+                    <li><a href="#">item 2</a></li>
+                    <li><a href="#">item 3</a></li>
+                    <li><a href="#">item 4</a></li>
+                </ul>
+            </div>
+            <!-- < 800px 出現，> 800px 隱藏的部分 end-->
+            
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="full-width" id="welcome">
+            <h1>Welcome Message</h1>
+        </section>
+
+        <section class="full-width" id="about">
+            <h2>Section Title</h2>
+            <div class="container">
+                <div class="col-2 box">
+                    <p>Content Box 1</p>
+                </div>
+                <div class="col-2 box">
+                    <p>Content Box 2</p>
+                </div>
+                <div class="col-2 box">
+                    <p>Content Box 3</p>
+                </div>
+                <div class="col-2 box">
+                    <p>Content Box 4</p>
+                </div>
+            </div>
+            <div class="content-btn" id="callOutButton">
+                <a href="#callOutSection" class="btn">Call to Action</a>
+            </div>
+        </section>
+        
+        <!-- click call to action 按鍵後出現的內容 begin -->
+        
+        <section class="full-width" id="callOutSection">
+            <div class="container">
+                <div class="col-2 box">
+                    <p>Content Box 5</p>
+                </div>
+                <div class="col-2 box">
+                    <p>Content Box 6</p>
+                </div>
+                <div class="col-2 box">
+                    <p>Content Box 7</p>
+                </div>
+                <div class="col-2 box">
+                    <p>Content Box 8</p>
+                </div>
+            </div>
+        </section>        
+        
+        <!-- click call to action 按鍵後出現的內容 end -->
+        
+    </main>
+    <script src="js/assignment-4.js"></script>
+</body>
+
+</html>
