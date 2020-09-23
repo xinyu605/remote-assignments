@@ -1,0 +1,186 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.fixed-width {
+    width: 96%;
+    margin: auto;
+}
+
+.col-2 {
+    width: 48%;
+    margin: 1%;
+}
+
+.col-4 {
+    width: 24%;
+    display: inline-block;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.col-4 img{
+    height: 80px;
+    display: block;
+}
+
+.col-4 figcation {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+h2 {
+    font-size: 30px;
+    color: dodgerblue;
+    line-height: 1.4;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.button-1 {
+    width: 120px;
+    height: 36px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 20px;
+    display: block;
+    font-size: 16px;
+}
+
+
+/* Header begin */
+
+header {
+    width: 100vw;
+    height: 50px;
+    background-color: ghostwhite;
+    vertical-align: middle;
+}
+
+header .logo {
+    margin-right: 20px;
+    float: left;
+}
+
+header .logo img {
+    height: 40px;
+    margin: 5px 15px 5px 15px;
+}
+
+header nav {
+    height: 50px;
+    float: left;
+}
+
+header nav li {
+    float: left;
+    margin-right: 20px;
+}
+
+header nav li a {
+    line-height: 50px;
+    text-decoration: none;
+    color: #444;
+}
+
+header .search {
+    width: 180px;
+    height: 30px;
+    margin: 10px 50px 10px 20px;
+    float: left;
+    position: relative;
+}
+
+header .search span {
+    height: 25px;
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+
+header .search input {
+    width: 150px;
+    height: 25px;
+    position: absolute;
+    margin-left: 30px;
+}
+
+header form select {
+    width: 100px;
+    height: 30px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+
+/* Header end, welcome & news begin */
+
+#announce {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+#announce p {
+    line-height: 50px;
+    color: white;
+    margin: auto;
+}
+
+#announce a {
+    color: white;
+}
+
+#news {
+    height: 340px;
+    background-color: whitesmoke;
+    padding: 20px;
+
+}
+
+#news article{
+    float: left;
+    
+}
+
+
+#newsImg {
+    height: 320px;
+    background-color: wheat;
+    float: left;
+}
+
+/* news end, intro begin */
+
+#intro h2 {
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#intro h2 span {
+    font-weight: 700;
+}

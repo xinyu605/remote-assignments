@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Google Developer</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class="clearfix">
         <div class="logo">
             <a href="#"><img src="img/logo.svg" alt="google developer"></a>
         </div>
@@ -21,7 +24,10 @@
             </ul>
         </nav>
         <div class="search">
-            <input type="search" name="search" value="Search">
+            <span class="material-icons">
+                search
+            </span>
+            <input type="text" name="search" value="Search">
         </div>
         <form action="/" method="post">
             <select name="language" id="nav-lang" size="1">
@@ -37,75 +43,80 @@
                 <option value="10">한국어</option>
             </select>
         </form>
-        <div class="user-photo">
-
-        </div>
     </header>
 
     <!--header end and main start-->
 
     <main>
-        <section class="welcome">
-            <div class="slogan">
+        <section id="welcome">
+            <div id="announce">
                 <p>Google is committed to advancing racial equity for Black communities. <a href="https://about.google/commitments/racialequity/?utm_source=google.com&utm_medium=redirect&utm_campaign=racialequity">See how.</a></p>
             </div>
-            <img src="img/11-weeks-of-android.svg" alt="11 weeks of android">
-            <p>Celebrate the beta launch of Android 11 with the 11 Weeks of Android virtual event. Follow along as we present new developer content in areas like UI, Android Jetpack, and Machine Learning. Each week also features its own learning pathway, with a unique badge you can earn for your developer profile.</p>
-            <div class="button-1">
-                <a href="https://developer.android.com/11weeksofandroid">View Schedule</a>
+            <div id="news" class="clearfix">
+               
+                <article class="col-2">
+                    <h2>Support for women’s entrepreneurship in the U.S. and Canada</h2>
+                    <h3>Google for Startups Accelerator: Women Founders</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem fugiat, dolorem adipisci obcaecati enim accusamus necessitatibus! Dignissimos distinctio sit eveniet ea, ex magnam? Quaerat consequatur sed quam necessitatibus veritatis maxime.</p>
+                    <button class="button-1">Learn More</button>
+                </article>
+                
+                <div id="newsImg" class="col-2">
+                    <p>fake image</p>
+                </div>
             </div>
         </section>
 
         <!-- Welcome end & intro start-->
 
-        <section class="intro">
-            <h2>Build <strong>anything</strong> with Google</h2>
+        <section id="intro">
+            <h2>Build <span>anything</span> with Google</h2>
             <div class="container">
-                <figure>
+                <figure class="col-4">
                     <img src="img/intro-1_Android_Robot_480.png" alt="android">
                     <figcation>Android</figcation>
                 </figure>
-                <figure>
+                <figure class="col-4">
                     <img src="img/intro-2_google_cloud_64dp.png" alt="google cloud">
                     <figcation>Google Cloud</figcation>
                 </figure>
-                <figure>
+                <figure class="col-4">
                     <img src="img/intro-3_firebase_64dp.png" alt="firebase">
                     <figcation>Firebase</figcation>
                 </figure>
-                <figure>
+                <figure class="col-4">
                     <img src="img/intro-4_flutter_64dp.png" alt="flutter">
                     <figcation>Flutter</figcation>
                 </figure>
-                <figure>
+                <figure class="col-4">
                     <img src="img/intro-5_assistant_64dp.png" alt="google assistant">
                     <figcation>Google Assistant</figcation>
                 </figure>
-                <figure>
+                <figure class="col-4">
                     <img src="img/intro-6_maps_64dp.png" alt="maps platform">
                     <figcation>Maps Platform</figcation>
                 </figure>
-                <figure>
+                <figure class="col-4">
                     <img src="img/intro-7_tensorflow-logo-196_480.png" alt="tensorflow">
                     <figcation>TensorFlow</figcation>
                 </figure>
-                <figure>
+                <figure class="col-4">
                     <img src="img/intro-8_web-fundamentals-icon192x192_480.png" alt="web">
                     <figcation>Web</figcation>
                 </figure>
-                <figure>
+                <figure class="col-4">
                     <img src="" alt="ad">
                     <figcation>Google Ads</figcation>
                 </figure>
-                <figure>
+                <figure class="col-4">
                     <img src="img/intro-10_analytics_64dp.png" alt="analytics">
                     <figcation>Google Analytics</figcation>
                 </figure>
-                <figure>
+                <figure class="col-4">
                     <img src="img/intro-11_play_prism_64dp.png" alt="google play">
                     <figcation>Google Play</figcation>
                 </figure>
-                <figure>
+                <figure class="col-4">
                     <img src="img/intro-12_youtube_64dp.png" alt="youtube">
                     <figcation>Youtube</figcation>
                 </figure>
