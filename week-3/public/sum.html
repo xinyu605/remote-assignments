@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sum</title>
+</head>
+
+<body>
+    <h1>Assignment-3</h1>
+    <div id="result"></div>
+    <form action="http://localhost:3000/getData" method="POST">
+        <label>請輸入數字：</label>
+        <input type="text" name="number">
+        <button type="submit">Submit</button>
+        <div id="output"></div>
+    </form>
+
+
+    <script>
+        //step 1: create new XHR object
+        let xhr = new XMLHttpRequest();
+        //step 2: define the callback function
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+                document.getElementById('result').innerHTML = xhr.responseText;
+            }
+        }
+        //step 3: open the request
+        xhr.open('GET', 'http://localhost:3000/getData?number=10');
+        //step 4: send the request
+        xhr.send();       
+
+    </script>
+</body>
+
+</html>
