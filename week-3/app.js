@@ -55,21 +55,20 @@ app.post('/getData', (req, res) => {
 //Assignment-4
 app.get('/myName', (req, res) =>{
     const name = req.cookies.name;
-    if(name){
-        res.render('myName', {name});   //{name: name}
-    }else{
-        res.redirect('/trackName');
-    }
+    res.render('myName', {name});
 });
 
+//myName.pug form using GET method
 app.get('/trackName', (req, res) => {
-    res.render('myName');
+      res.cookie('name', req.query.name);    //save the cookie
+      res.redirect('/myName');
 });
 
-app.post('/trackName', (req, res) => {
-    res.cookie('name', req.body.name);  //save the cookie
-    res.redirect('/myName');
-});
+////myName.pug form using POST method
+//app.post('/trackName', (req, res) => {
+//    res.cookie('name', req.body.name);  //save the cookie
+//    res.redirect('/myName');
+//});
 
 //Assignment-2: add positive numbers
 function addNum(integer) {
