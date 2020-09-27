@@ -38,17 +38,34 @@ app.get('/getData', (req, res) => {
     }
 });
 
+
 //Assignment-3: user interaction
-app.post('/getData', (req, res) => {
-    const number = req.body.number;
+//app.post('/getData', (req, res) => {
+//    const number = req.body.number;
+//    const integer = /^\+?[1-9][0-9]*$/;
+//    if (!number) {
+//        res.send('Lack of parameter');        
+//    } else if (integer.test(number)) {
+//        const ans = addNum(number);
+//        res.send(`Result is ${ans}`);
+//    } else {
+//        res.send('Wrong parameter!');
+//    }
+//});
+
+app.get('/getData2', (req, res) => {
+    const number = req.query.number;
     const integer = /^\+?[1-9][0-9]*$/;
     if (!number) {
-        res.send('Lack of parameter');        
+        res.locals.result = `<p>Lack of parameter</p>`;
+//        res.send('<p>Lack of parameter</p>');       
     } else if (integer.test(number)) {
         const ans = addNum(number);
-        res.send(`Result is ${ans}`);
+        res.locals.result = `<p>Result is ${ans}</p>`;
+//        res.send(`<p>Result is ${ans}</p>`);
     } else {
-        res.send('Wrong parameter!');
+        res.locals.result = `<p>Wrong parameter!</p>`;
+//        res.send('<p>Wrong parameter!</p>');
     }
 });
 

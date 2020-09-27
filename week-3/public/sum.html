@@ -8,28 +8,31 @@
 
 <body>
     <h1>Assignment-3</h1>
-    <div id="result"></div>
-    <form action="http://localhost:3000/getData" method="POST">
+<!--    <form action="/getData" method="get">-->
         <label>請輸入數字：</label>
-        <input type="text" name="number">
-        <button type="submit">Submit</button>
+        <input type="text" name="number" id="numberInput">
+        <button type="submit" onclick="sendAjax()">Submit</button>
         <div id="output"></div>
-    </form>
-
+<!--    </form>-->
 
     <script>
-        //step 1: create new XHR object
-        let xhr = new XMLHttpRequest();
-        //step 2: define the callback function
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4) {
-                document.getElementById('result').innerHTML = xhr.responseText;
+        function sendAjax() {
+            //step 1: create new XHR object
+            let xhr = new XMLHttpRequest();
+            //step 2: define the callback function
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    document.getElementById('output').innerHTML = xhr.responseText;
+                };
             }
-        }
-        //step 3: open the request
-        xhr.open('GET', 'http://localhost:3000/getData?number=10');
-        //step 4: send the request
-        xhr.send();       
+
+            //step 3: open the request
+            const numInput = document.getElementById('numberInput').value;
+            xhr.open('GET', `/getData?number=${numInput}`, true);
+
+            //step 4: send the request
+            xhr.send();
+        }     
 
     </script>
 </body>
