@@ -133,10 +133,12 @@ request 1: Layout when screen width > 1200px
     
     /* callOutSection begin */
     
+/*
     #callOutSection {
         display: none;
     }
     
+*/
     /* callOutSection end */
 }
 
@@ -271,10 +273,12 @@ request 2: Layout when screen width > 800px and < 1200px
     
     /* callOutSection begin */
     
+/*
     #callOutSection {
         display: none;
     }
     
+*/
     /* callOutSection end */
 }
 
@@ -357,7 +361,7 @@ request 3: Layout when screen width > 500px and < 800px
         position: fixed;
         top: 0;
         right: 0;
-        visibility: hidden;
+/*        visibility: hidden;*/
     }
 
     nav #mobileMenu span {
@@ -427,10 +431,12 @@ request 3: Layout when screen width > 500px and < 800px
     
     /* callOutSection begin */
     
+/*
     #callOutSection {
         display: none;
     }
     
+*/
     /* callOutSection end */
 }
 
@@ -507,7 +513,7 @@ request 4: Layout when screen width < 500px
         position: fixed;
         top: 0;
         right: 0;
-        visibility: hidden;
+/*        visibility: hidden;*/
     }
 
     /* 手機 menu */
@@ -578,9 +584,11 @@ request 4: Layout when screen width < 500px
         
     /* callOutSection begin */
     
+/*
     #callOutSection {
         display: none;
     }
+*/
     
     /* callOutSection end */
 }
